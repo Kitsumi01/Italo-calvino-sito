@@ -1,0 +1,199 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: General sans, sans-serif;
+    margin: 0;
+    background-color: #009C52;
+}
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    max-width: 1100px;
+    background-color: black;
+    color: white;
+    margin: 48px auto;
+    display: flex;
+    padding: 24px;
+    justify-content: space-between;
+    font-size: 24px;
+    align-items: center;
+}
+header p {
+margin: 0;
+}
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    font-size: 12px;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+header nav a {
+    color: white;
+}
+header nav a:hover {
+    color: grey;
+}
+
+
+.copertina {
+    display: grid;
+    max-width: 1100px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 128px;
+    padding: 120px 20px;
+}
+
+.titolo h2 {
+    color: white;
+    font-size: 89px;
+    font-weight: lighter;
+    line-height: 1;
+}
+
+.titolo h3 {
+    color: black;
+    font-size: 39px;
+}
+
+.part1 {
+    padding: 120px 20px;
+}
+
+.part2 {
+    padding: 120px 20px;
+}
+
+.part3 {
+    padding: 120px 20px;
+}
+
+.outro {
+    padding: 120px 20px 240px;
+    margin: auto;
+    max-width: 1100px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+}
+
+.container .text {
+    width: 66%;
+}
+
+.container .image {
+    width: 33%;
+}
+
+.container .text h2 {
+    font-size: 68px;
+    font-weight: lighter;
+    line-height: 1;
+    margin-bottom: 1.4rem;
+}
+
+.container .text p {
+    color: white;
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 1.4rem;
+}
+
+
+footer {
+    max-width: 1100px;
+    background-color: black;
+    color: white;
+    margin: 48px auto;
+    display: flex;
+    padding: 12px 16px;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    font-size: 12px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+footer nav a {
+    color: white;
+}
+footer nav a:hover {
+    color: grey;
+}
+
+@media (max-width:700px) {
+    .copertina {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .copertina h2 {
+        font-size: 69px;
+    }
+
+    .copertina h3 {
+        font-size: 29px;
+    }
+    
+    .container .text {
+        width: 100%;
+    }
+    
+    .container .image {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+   .outro {
+    padding: 60px 20px 120px;
+   }
+   
+    .outro svg{
+       width: 500px;
+    }
+
+}
